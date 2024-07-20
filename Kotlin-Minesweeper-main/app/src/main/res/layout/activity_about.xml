@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DifficultyActivity">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#60C946"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/chooseDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/howToPlay"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:layout_marginTop="20dp"
+                android:shadowColor="#000000"
+                android:shadowDx="9"
+                android:shadowDy="8"
+                android:shadowRadius="10"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/architun_medium"
+                />
+
+            <ImageView
+                android:id="@+id/aboutPicture"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/sample" />
+
+            <TextView
+                android:id="@+id/easyScore"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/architun_medium"
+                android:shadowColor="#000000"
+                android:shadowDx="9"
+                android:shadowDy="8"
+                android:shadowRadius="10"
+                android:text="@string/desc"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

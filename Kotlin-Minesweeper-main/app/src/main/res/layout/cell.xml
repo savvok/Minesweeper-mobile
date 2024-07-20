@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/cellImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:src="@drawable/closed_cell"
+        />
+    <TextView
+        android:id="@+id/cellText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-40dp"
+        android:fontFamily="@font/bruce_forever_regular"
+    />
+    <ImageView
+        android:id="@+id/mineImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:src="@drawable/mine"
+        android:layout_marginTop="-35dp"
+        android:layout_marginStart="5dp"
+        android:visibility="invisible"
+        />
+</LinearLayout>
